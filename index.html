@@ -854,7 +854,7 @@ function importParts(keepOpen=false){
  if(!placed&&!reused&&!skipped.length)$('#siStatus').textContent='No components were placed.';
  if(!keepOpen)closeSI()
 }
-$('#siPlace').onclick=importParts;
+$('#siPlace').onclick=()=>importParts(false);
 })();
 
 /* ---------- demo board + loop ---------- */
